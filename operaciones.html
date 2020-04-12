@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
+</head>
+<body>
+    
+<div class="header">
+    <nav>
+        <input type="checkbox" id="checkbox1" />
+        <label for="checkbox1">
+        
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="grafico-vectorial.html">Grafico Vectorial</a>
+                <li><a href="operaciones.html">Operaciones JS</a></li>
+                <li><a href="animaciones.html">Animaciones CSS</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+             </ul>
+    
+        <span class="toggle">☰</span>
+        </label>
+        </nav>
+</div>
+<div class="container">
+    <section class="main-slider">
+        <div class="main-slider-child">
+            <label>Seleccione figura :</label>
+            <input list="customer_list" id = "s_cust" name = "s_cust" type="text" onblur ="CalculoFiguras();">
+            <label id="cust_name" name = "cust_name"></label>
+    
+            <datalist id="customer_list">
+                <option value = "1" onclick="alert('test')"> Triangulo</option>
+                <option value = "2"> Circulo </option>
+                <option value = "3"> Rectangulo </option>
+                <option value = "4"> Rombo </option>
+                <option value = "5"> Trapecio </option>
+            </datalist>
+        </div>
+        
+    </section>
+    <section class="slider">
+        <div class="overlay">
+            <div class="content-slider-animation">
+                <h1>OPERACIONES JS</h1> 
+                <p>Utilizaremos un entrada de datos para indicar que figura
+                    queremos que se le calcule el area.</p>
+            </div>
+        </div>
+        <p>a</p>
+    </section>    
+    
+</div>
+<div class="footer">
+    <div id="logo-container">
+        <img id="image1"src="img/logo-universidad.png" alt="Logo unilibre">
+    </div>
+    <div class="copy">
+        Haciendo las cosas con pasión 2020
+    </div>
+</div>
+
+<script src="js/figuras.js"></script>
+</body>
+</html>

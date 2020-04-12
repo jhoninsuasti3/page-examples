@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
+</head>
+<body>
+    
+<div class="header">
+    <nav>
+        <input type="checkbox" id="checkbox1" />
+        <label for="checkbox1">
+        
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="grafico-vectorial.html">Grafico Vectorial</a>
+                <li><a href="operaciones.html">Operaciones JS</a></li>
+                <li><a href="animaciones.html">Animaciones CSS</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+             </ul>
+    
+        <span class="toggle">☰</span>
+        </label>
+        </nav>
+</div>
+<div class="container">
+    <section class=".main-slider-grafico">
+        <div class="main-slider-child-vector">
+            <svg version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+               <path fill="#fff" d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">
+                    <animateTransform attributeName="transform" 
+                        attributeType="XML" 
+                        type="rotate"
+                        dur="1s" 
+                        from="0 50 50"
+                        to="360 50 50" 
+                        repeatCount="indefinite" />
+                </path>
+          </svg>
+        </div>
+        <div class="main-slider-child-vector">
+            <svg version="1.1" id="L5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+                <circle fill="#fff" stroke="none" cx="6" cy="50" r="6">
+                    <animateTransform 
+                        attributeName="transform" 
+                        dur="1s" 
+                        type="translate" 
+                        values="0 15 ; 0 -15; 0 15" 
+                        repeatCount="indefinite" 
+                        begin="0.1"/>
+                </circle>
+                <circle fill="#fff" stroke="none" cx="30" cy="50" r="6">
+                    <animateTransform 
+                        attributeName="transform" 
+                        dur="1s" 
+                        type="translate" 
+                        values="0 10 ; 0 -10; 0 10" 
+                        repeatCount="indefinite" 
+                        begin="0.2"/>
+                </circle>
+                <circle fill="#fff" stroke="none" cx="54" cy="50" r="6">
+                    <animateTransform 
+                        attributeName="transform" 
+                        dur="1s" 
+                        type="translate" 
+                        values="0 5 ; 0 -5; 0 5" 
+                        repeatCount="indefinite" 
+                        begin="0.3"/>
+                </circle>
+            </svg>
+        </div>
+        
+    </section>
+    <section class="slider">
+        <div class="overlay">
+            <div class="content-slider-animation">
+                <h1>SVG</h1>
+                <p>SVG significa Gráficos Vectoriales Escalables.</p>
+
+                <p>SVG define gráficos basados ​​en vectores en formato XML.</p>
+            </div>
+        </div>
+        <p>a</p>
+    </section>    
+    
+</div>
+<div class="footer">
+    <div id="logo-container">
+        <img id="image1"src="img/logo-universidad.png" alt="Logo unilibre">
+    </div>
+    <div class="copy">
+        Haciendo las cosas con pasión 2020
+    </div>
+</div>
+
+
+</body>
+</html>

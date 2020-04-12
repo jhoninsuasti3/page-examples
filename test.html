@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tets</title>
+    <script src="https://js.cx/libs/animate.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <p><button onclick="myMove()">Click Me</button></p> 
+
+    <div id ="container">
+        <div id ="animate"></div>
+    </div>
+
+        <label>Seleccione figura :</label>
+        <input list="customer_list" id = "s_cust" name = "s_cust" type="text" onblur ="CalculoFiguras();">
+        <label id="cust_name" name = "cust_name"></label>
+
+        <datalist id="customer_list">
+            <option value = "1" onclick="alert('test')"> Triangulo</option>
+            <option value = "2"> Circulo </option>
+            <option value = "3"> Rectangulo </option>
+            <option value = "4"> Rombo </option>
+            <option value = "5"> Trapecio </option>
+        </datalist>
+
+        <div id="field">
+            <img src="https://js.cx/clipart/ball.svg" width="40" height="40" id="ball">
+          </div>
+    <script src="test.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
+</head>
+<body>
+   
+<div class="header">
+    <nav>
+        <input type="checkbox" id="checkbox1" />
+        <label for="checkbox1">
+        
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="grafico-vectorial.html">Grafico Vectorial</a>
+                <li><a href="operaciones.html">Operaciones JS</a></li>
+                <li><a href="animaciones.html">Animaciones CSS</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+             </ul>
+    
+        <span class="toggle">☰</span>
+        </label>
+        </nav>
+</div>
+<div class="container">
+    <section class="main-slider">
+        <div class="main-slider-child">
+            <p class="capturalineas">
+                ¿Cuantas líneas quieres?<br>
+                <br>
+                <input type="text" id="cant_lineas"/>
+                <br>
+                <br>
+                <!-- <input type="button" style="vertical-align:middle" value="Continuar" id="boton_form" /> -->
+                <button id="boton_form" class="button" style="vertical-align:middle"><span>Continuar </span></button>
+            </p>
+            
+            <canvas width="300" height="300" id="dibujito"></canvas>
+        </div>
+    </section>
+    <section class="slider">
+        <div class="overlay">
+            <div class="content-slider-animation">
+                <h1>CANVAS</h1>
+                <h2>Dibujo en canvas</h2>
+                <p style="margin: 10px">Haremos una figura geometrica a partir de un lienzo y pediremos al usuario 
+                    cuantas lineas desea ver en el plano de canvas, que se dibujará con JS
+                </p>
+            </div>
+        </div>
+    </section>    
+    
+</div>
+<div class="footer">
+    <div id="logo-container">
+        <img id="image1"src="img/logo-universidad.png" alt="Logo unilibre">
+    </div>
+    <div class="copy">
+        Haciendo las cosas con pasión 2020
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

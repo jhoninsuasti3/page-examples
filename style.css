@@ -1,0 +1,298 @@
+/*
+* Author 
+*/
+body, html{
+    background-color: honeydew;
+    margin: 0;
+    font-family: 'Open Sans';
+    font-size:15px
+}
+svg{
+    width: 200px;
+    height: 170px;
+    margin: 0 auto;
+    display:inline-block;
+  }
+a{text-decoration:none;color:#fff}
+
+.header{
+    height: 20%;
+    width: 100%;
+    background-color: #28303a;
+}
+.container{
+    position: absolute;
+    height: 65%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: salmon;
+}
+.container>section{
+    background-color: #C23B22;
+    width:50%;
+    height: 100%;
+}
+.slider{
+    background-image: url("img/fondo-u.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+}
+.content-slider{
+    text-align: center;
+    color: #fff;
+    z-index: 9999 !important;
+    font-size: 24px;
+    font-weight: 900;
+    padding-top: 18%;
+}
+.content-slider-animation{
+    text-align: center;
+    color: #fff;
+    z-index: 9999 !important;
+    font-size: 24px;
+    font-weight: 900;
+    padding-top: 2%;
+}
+.main-slider{
+    color: #fff;
+    display: flex;
+}
+.main-slider-grafico{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.capturalineas{
+    padding: 20px;
+}
+.main-slider-child{
+    display: flex;
+    align-items: center;   
+    justify-content: space-between;
+}
+.main-slider-child-vector{
+    margin: 0 auto;
+    padding-left: 36%;
+}
+.main-slider-child-two{
+    padding-top: 18%;
+}
+.main-slider-child>div{
+    width: 50%;
+}
+.main-slider-child>img {
+    max-width: 80%;
+    width: 65%;
+}
+.overlay{
+    position: absolute;
+    /*background-color: rgba(226,226,226,0.6);*/
+    background-color: rgba(50,50,50,0.9);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}
+.footer{
+    /*height: 30% ;*/
+    background-color: rgba(200, 200, 200, 1) ;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    
+}
+
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 25px;  
+}
+#logo-container>img {
+    max-width: 100%;
+    width: 55%;
+}
+.copy{
+    background-color: rgba(10, 10, 10, 0.8) ;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    color:white;
+    height: 30px;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+
+/* Reglas css de la pagina para la parte del header o menu nav */
+
+nav {
+    margin:0 auto;
+    max-width:700px;
+    width:100%;
+  }
+  
+  .menu {
+    background:#28303a;
+    padding:0;
+    margin:0;
+    max-width:700px;
+    height:50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none; 
+  }
+  
+  .menu li a {padding:10px;border-radius:5px;align-self:center;}
+  .menu li a:hover { background: #C23B22;}
+  
+  #checkbox1,.toggle { display: none;}
+  
+  /* Darle el estilo a las resoluciones mas pequeñas -> pantallas mas pequeñas */
+  @media screen and (max-width: 550px) {
+  
+    .menu {
+      flex-direction: column;
+      height: 0px;
+    }
+    .menu li {
+      display: flex;
+      align-self: center;
+      width:100%;
+       /* Ocultar hasta que se le de click en el icono hamburguesa*/
+      opacity: 0;
+      visibility: hidden;
+    }
+    .menu li a {
+      width: 100%;
+      text-align: center;
+      align-self: center;
+      align-content: center;
+    }
+  
+  .toggle {
+      color:#fff;
+      clear: both;
+      display: block;
+      text-align: center;
+      line-height: 40px;
+      cursor: pointer;
+      width: 100%;
+      height: 40px;
+    }
+    
+    .toggle:hover {
+      background: #C23B22;
+    }
+    #checkbox1:checked + label .menu li {
+      /* Mostrar menu - Usuario da clic en el icono hamburguesa */
+      opacity: 1;
+      visibility: visible;
+    }
+  
+    #checkbox1:checked + label .menu {
+      height: 200px;
+    }
+  }
+  
+
+/* Estilos para el boton*/
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 20px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  input[type=text] {
+    width: 100%;
+    padding: 14px 16px;
+    margin: 7px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 4px;
+  }
+
+  /* Estilos al balon para animacion */
+  #field {
+    height: 200px;
+    border-bottom: 3px black groove;
+    position: relative;
+  }
+  
+  #ball {
+    position: absolute;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+  /**
+  Ojo pruebas de animacion 
+
+  */
+
+  #container-m {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: yellow;
+  }
+  #animate {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #fff;
+  }
